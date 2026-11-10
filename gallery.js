@@ -54,8 +54,8 @@
     return '第 ' + numbers[0] + '–' + numbers[numbers.length - 1] + ' 页';
   }
 
-  // Grid auto-placement remains sparse and row-first. The DOM and the visual
-  // top-to-bottom order therefore both follow the original PDF sequence.
+  // Pack each page into the shortest available column, preserving every page
+  // uncropped and keeping keyboard/viewer order in the original DOM sequence.
   function layoutGrid(grid) {
     const columns = window.innerWidth <= 340 ? 1 : window.innerWidth <= 700 ? 2 : 3;
     const width = grid.getBoundingClientRect().width;
@@ -65,21 +65,32 @@
     gridWidths.set(grid, { width: width, columns: columns });
     grid.style.setProperty('--masonry-columns', String(columns));
     grid.dataset.columns = String(columns);
-    const unit = 4;
     const gap = 4;
     const columnWidth = (width - gap * (columns - 1)) / columns;
+    const columnHeights = Array(columns).fill(0);
     const tiles = Array.from(grid.children);
     tiles.forEach(function (tile, index) {
       const span = tiles.length === 1 ? columns : index === 0 ? Math.min(columns, 2) : 1;
       const ratio = Number(tile.dataset.ratio) || 16 / 9;
       const imageWidth = columnWidth * span + gap * (span - 1);
       const imageHeight = imageWidth / ratio;
-      const rowSpan = Math.max(1, Math.ceil((imageHeight + gap) / (unit + gap)));
-      tile.style.gridColumn = 'span ' + span;
-      tile.style.gridRowEnd = 'span ' + rowSpan;
+      let column = 0;
+      let top = Infinity;
+      for (let start = 0; start <= columns - span; start += 1) {
+        const candidate = Math.max.apply(null, columnHeights.slice(start, start + span));
+        if (candidate < top) { column = start; top = candidate; }
+      }
+      tile.style.left = (column * (columnWidth + gap)) + 'px';
+      tile.style.top = top + 'px';
+      tile.style.width = imageWidth + 'px';
+      tile.style.height = imageHeight + 'px';
+      for (let occupied = column; occupied < column + span; occupied += 1) {
+        columnHeights[occupied] = top + imageHeight + gap;
+      }
       const image = tile.querySelector('img');
       if (image) image.sizes = Math.ceil(imageWidth) + 'px';
     });
+    grid.style.height = Math.max(0, Math.max.apply(null, columnHeights) - gap) + 'px';
   }
 
   const observedSections = [];

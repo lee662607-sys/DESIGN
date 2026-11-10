@@ -10,7 +10,7 @@
     exhibition: { color: '#ebe3b1', ink: '#847a42', english: 'Exhibition Design' },
     presentation: { color: '#ee603c', ink: '#ffffff', english: 'PPT Design' },
     brochure: { color: '#417dbf', ink: '#ffffff', english: 'Brochure Design' },
-    other: { color: '#45ad43', ink: '#ffffff', english: 'Other Designs' }
+    other: { color: '#45ad43', ink: '#ffffff', english: 'Poster Design' }
   };
   const categories = data.categories.filter(category => category.id !== 'overview');
   const stack = document.createElement('div');

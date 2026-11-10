@@ -145,12 +145,10 @@
 .portfolio-projects a:hover { color: var(--ink, #000); text-decoration-color: currentColor; }
 
 .masonry {
-  display: grid;
+  display: block;
   gap: 4px;
-  grid-auto-flow: row;
-  grid-auto-rows: 4px;
-  grid-template-columns: repeat(var(--masonry-columns, 3), minmax(0, 1fr));
   margin: 0 4px;
+  position: relative;
 }
 
 .masonry__item {
@@ -169,7 +167,7 @@
   min-width: 0;
   overflow: hidden;
   padding: 0;
-  position: relative;
+  position: absolute;
   scroll-margin-top: 150px;
   text-align: inherit;
   width: 100%;

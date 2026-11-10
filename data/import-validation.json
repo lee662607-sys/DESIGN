@@ -1,6 +1,12 @@
 {
   "desktop": {
-    "all_42_high_resolution_images_loaded": true,
+    "category_order": [
+      "画册设计",
+      "折页设计",
+      "PPT 设计",
+      "展陈设计",
+      "海报设计"
+    ],
     "reading_order": [
       1,
       2,
@@ -16,6 +22,17 @@
       12,
       13,
       14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
       26,
       27,
       28,
@@ -25,17 +42,6 @@
       32,
       33,
       34,
-      21,
-      22,
-      23,
-      24,
-      25,
-      15,
-      16,
-      17,
-      18,
-      19,
-      20,
       35,
       36,
       37,
@@ -45,33 +51,37 @@
       41,
       42
     ],
-    "category_boundaries": true,
-    "visual_order": true,
-    "zoom_keyboard_focus": true,
-    "gap": "4px",
-    "radius": "0px",
-    "hero_real_images_and_three_states": true
+    "all_42_full_resolution_images_loaded": true,
+    "viewer_category_boundaries": true,
+    "viewer_focus_return": true,
+    "project_anchors_visible": true,
+    "square_corners": true,
+    "gap_px": 4,
+    "original_page_ratio_preserved": true,
+    "no_overlaps": true
   },
   "responsive": {
-    "320_390_2200_no_overflow": true,
-    "all_pages_visible_and_in_order": true
+    "widths_checked": [
+      320,
+      390,
+      700,
+      701,
+      1024,
+      2200,
+      1440
+    ],
+    "no_overflow": true,
+    "no_overlaps": true,
+    "all_pages_visible_in_order": true,
+    "anchors_visible": true,
+    "resize_back_to_desktop": true
   },
-  "reduced_motion": "static hero; all 42 pages accessible",
-  "page_errors": [],
+  "mobile_folder_order_and_tap": true,
+  "console_errors": [],
   "failed_requests": [],
   "sourceSha256": "b685d18ec02cff54f811b0e0f0550dcf74ffc0f6cedaf962ff479859d12cc005",
   "importedPages": 42,
   "missingPages": [],
   "duplicatePages": [],
-  "displayOrder": [
-    "画册设计",
-    "展陈设计",
-    "PPT设计",
-    "折页设计",
-    "其他设计"
-  ],
-  "navigationActiveTabVisibleOnMobile": true,
-  "verifiedAtUtc": "2026-11-10T02:28:34.941993+00:00",
-  "dialogRepeatedCloseOpenImagesVisible": true,
-  "lastPageScreenshotVisuallyChecked": true
+  "verifiedAtUtc": "2026-11-10T08:34:27.190866+00:00"
 }

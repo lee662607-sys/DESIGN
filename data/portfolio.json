@@ -6,7 +6,7 @@
     "url": "https://github.com/lee662607-sys/DESIGN/releases/download/portfolio-pdf/Lee-.2.pdf",
     "releaseUrl": "https://github.com/lee662607-sys/DESIGN/releases/tag/portfolio-pdf"
   },
-  "orderBasis": "User selected cover directory order; original PDF page numbers retained",
+  "orderBasis": "Latest user order: editorial, brochure, presentation, exhibition, poster; original PDF page numbers retained",
   "categories": [
     {
       "id": "overview",
@@ -96,6 +96,95 @@
       ]
     },
     {
+      "id": "brochure",
+      "title": "折页设计",
+      "english": "Brochure",
+      "sourceTitle": "折页设计",
+      "subtitle": "",
+      "pages": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "pageNumbers": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "projects": [
+        {
+          "id": "dongfanghong-fold",
+          "title": "“匠心智造 笃行致远”湖南东方红建设集团折页",
+          "kind": "case",
+          "categoryId": "brochure",
+          "pageNumbers": [
+            16,
+            17
+          ]
+        },
+        {
+          "id": "yuelu-science-fold",
+          "title": "“城启新章”湘江科学城·岳麓山大学科技城折页",
+          "kind": "case",
+          "categoryId": "brochure",
+          "pageNumbers": [
+            18
+          ]
+        },
+        {
+          "id": "xiangjiang-investment-fold",
+          "title": "湖南湘江新区（长沙高新区）环境投资推介",
+          "kind": "case",
+          "categoryId": "brochure",
+          "pageNumbers": [
+            19,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "id": "presentation",
+      "title": "PPT 设计",
+      "english": "Presentation",
+      "sourceTitle": "PPT设计",
+      "subtitle": "",
+      "pages": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "pageNumbers": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "projects": [
+        {
+          "id": "presentation-collection",
+          "title": "PPT设计合集",
+          "kind": "collection",
+          "categoryId": "presentation",
+          "pageNumbers": [
+            22,
+            23,
+            24,
+            25
+          ]
+        }
+      ]
+    },
+    {
       "id": "exhibition",
       "title": "展陈设计",
       "english": "Exhibition",
@@ -159,100 +248,11 @@
       ]
     },
     {
-      "id": "presentation",
-      "title": "PPT 设计",
-      "english": "Presentation",
-      "sourceTitle": "PPT设计",
-      "subtitle": "",
-      "pages": [
-        21,
-        22,
-        23,
-        24,
-        25
-      ],
-      "pageNumbers": [
-        21,
-        22,
-        23,
-        24,
-        25
-      ],
-      "projects": [
-        {
-          "id": "presentation-collection",
-          "title": "PPT设计合集",
-          "kind": "collection",
-          "categoryId": "presentation",
-          "pageNumbers": [
-            22,
-            23,
-            24,
-            25
-          ]
-        }
-      ]
-    },
-    {
-      "id": "brochure",
-      "title": "折页设计",
-      "english": "Brochure",
-      "sourceTitle": "折页设计",
-      "subtitle": "",
-      "pages": [
-        15,
-        16,
-        17,
-        18,
-        19,
-        20
-      ],
-      "pageNumbers": [
-        15,
-        16,
-        17,
-        18,
-        19,
-        20
-      ],
-      "projects": [
-        {
-          "id": "dongfanghong-fold",
-          "title": "“匠心智造 笃行致远”湖南东方红建设集团折页",
-          "kind": "case",
-          "categoryId": "brochure",
-          "pageNumbers": [
-            16,
-            17
-          ]
-        },
-        {
-          "id": "yuelu-science-fold",
-          "title": "“城启新章”湘江科学城·岳麓山大学科技城折页",
-          "kind": "case",
-          "categoryId": "brochure",
-          "pageNumbers": [
-            18
-          ]
-        },
-        {
-          "id": "xiangjiang-investment-fold",
-          "title": "湖南湘江新区（长沙高新区）环境投资推介",
-          "kind": "case",
-          "categoryId": "brochure",
-          "pageNumbers": [
-            19,
-            20
-          ]
-        }
-      ]
-    },
-    {
       "id": "other",
-      "title": "其他设计",
-      "english": "Other designs",
+      "title": "海报设计",
+      "english": "Poster",
       "sourceTitle": "海报设计",
-      "subtitle": "海报设计",
+      "subtitle": "",
       "pages": [
         35,
         36,
@@ -945,6 +945,17 @@
     12,
     13,
     14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
     26,
     27,
     28,
@@ -954,17 +965,6 @@
     32,
     33,
     34,
-    21,
-    22,
-    23,
-    24,
-    25,
-    15,
-    16,
-    17,
-    18,
-    19,
-    20,
     35,
     36,
     37,

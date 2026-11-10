@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Join rendered PDF pages and the visually reviewed catalog.
 
-Display order is Lee's explicitly selected cover-directory order. PDF page
+Display order follows Lee's latest category order. PDF page
 numbers remain unchanged, and every original page must occur exactly once.
 """
 from pathlib import Path
@@ -14,8 +14,8 @@ assert rendered['sha256'] == review['sha256']
 assert rendered['pageCount'] == review['page_count'] == 42
 
 ids = {'album': 'editorial', 'exhibition': 'exhibition', 'ppt': 'presentation', 'brochure': 'brochure', 'poster': 'other'}
-titles = {'editorial': ('画册设计', 'Editorial'), 'exhibition': ('展陈设计', 'Exhibition'), 'presentation': ('PPT 设计', 'Presentation'), 'brochure': ('折页设计', 'Brochure'), 'other': ('其他设计', 'Other designs')}
-order = ['editorial', 'exhibition', 'presentation', 'brochure', 'other']
+titles = {'editorial': ('画册设计', 'Editorial'), 'exhibition': ('展陈设计', 'Exhibition'), 'presentation': ('PPT 设计', 'Presentation'), 'brochure': ('折页设计', 'Brochure'), 'other': ('海报设计', 'Poster')}
+order = ['editorial', 'brochure', 'presentation', 'exhibition', 'other']
 sections = {ids[s['id']]: s for s in review['sections']}
 groups = [{
     'id': g['id'], 'title': g['title'], 'kind': g['kind'],
@@ -33,7 +33,7 @@ for category_id in order:
     categories.append({
         'id': category_id, 'title': title, 'english': english,
         'sourceTitle': section['title'],
-        'subtitle': '海报设计' if category_id == 'other' else '',
+        'subtitle': '',
         'pages': numbers, 'pageNumbers': numbers,
         'projects': [g for g in groups if g['categoryId'] == category_id],
     })
@@ -56,7 +56,7 @@ data = {
         'url': 'https://github.com/lee662607-sys/DESIGN/releases/download/portfolio-pdf/Lee-.2.pdf',
         'releaseUrl': 'https://github.com/lee662607-sys/DESIGN/releases/tag/portfolio-pdf',
     },
-    'orderBasis': 'User selected cover directory order; original PDF page numbers retained',
+    'orderBasis': 'Latest user order: editorial, brochure, presentation, exhibition, poster; original PDF page numbers retained',
     'categories': categories, 'projects': groups, 'pages': pages,
     'readingOrder': reading_order,
 }
