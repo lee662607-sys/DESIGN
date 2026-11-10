@@ -50,8 +50,6 @@ for page in rendered['pages']:
     })
 reading_order = [n for category in categories for n in category['pageNumbers']]
 assert len(reading_order) == 42 and sorted(reading_order) == list(range(1, 43))
-hero_pages = {g['pageNumbers'][0] for g in groups} | {23, 24, 25, 37, 39, 42}
-by_number = {p['number']: p for p in pages}
 data = {
     'source': {
         'title': 'Lee 设计作品集', 'pageCount': 42, 'sha256': rendered['sha256'],
@@ -61,7 +59,6 @@ data = {
     'orderBasis': 'User selected cover directory order; original PDF page numbers retained',
     'categories': categories, 'projects': groups, 'pages': pages,
     'readingOrder': reading_order,
-    'heroImages': [by_number[n]['thumb'] for n in reading_order if n in hero_pages],
 }
 for page in pages:
     for key in ['thumb', 'image']:
@@ -70,4 +67,3 @@ for page in pages:
 (ROOT / 'portfolio-data.js').write_text('window.LEE_PORTFOLIO = ' + json.dumps(data, ensure_ascii=False, separators=(',', ':')) + ';\n')
 print('Catalog order:', ' → '.join(c['title'] for c in categories))
 print('All PDF pages:', len(pages), '; distinct pages in reading order:', len(set(reading_order)))
-print('Hero uses real PDF page thumbnails:', len(data['heroImages']))

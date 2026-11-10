@@ -349,7 +349,7 @@
   const work = document.getElementById('work');
   if (work) work.dataset.galleryReady = 'true';
   window.LeeGallery = Object.freeze({
-    open: function (pageNumber) { openPage(Number.isInteger(pageNumber) ? pageNumber : 1); },
+    open: function (pageNumber, trigger) { openPage(Number.isInteger(pageNumber) ? pageNumber : 1, trigger); },
     close: closeView,
     viewCount: pages.length,
     pageCount: pages.length
