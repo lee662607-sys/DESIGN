@@ -1,0 +1,542 @@
+{
+  "source": "Lee-portfolio.pdf",
+  "sha256": "b685d18ec02cff54f811b0e0f0550dcf74ffc0f6cedaf962ff479859d12cc005",
+  "page_count": 42,
+  "cover_pages": [
+    1
+  ],
+  "chapter_pages": [
+    2,
+    15,
+    21,
+    26,
+    35
+  ],
+  "work_page_count": 36,
+  "group_count": 14,
+  "group_count_note": "14个展示分组，包括明确项目和保守归类的合集；不能对外宣传为14个独立委托项目。",
+  "order_basis": "Physical PDF body chapter/page order, not cover navigation tab order",
+  "sections": [
+    {
+      "id": "album",
+      "title": "画册设计",
+      "english": "Album Design",
+      "source_letter": "A",
+      "chapter_page": 2,
+      "start_page": 2,
+      "end_page": 14
+    },
+    {
+      "id": "brochure",
+      "title": "折页设计",
+      "english": "Brochure Design",
+      "source_letter": "B",
+      "chapter_page": 15,
+      "start_page": 15,
+      "end_page": 20
+    },
+    {
+      "id": "ppt",
+      "title": "PPT设计",
+      "english": "PPT Design",
+      "source_letter": "C",
+      "chapter_page": 21,
+      "start_page": 21,
+      "end_page": 25
+    },
+    {
+      "id": "exhibition",
+      "title": "展陈设计",
+      "english": "Exhibition Design",
+      "source_letter": "D",
+      "chapter_page": 26,
+      "start_page": 26,
+      "end_page": 34
+    },
+    {
+      "id": "poster",
+      "title": "海报设计",
+      "english": "Poster Design",
+      "source_letter": "F",
+      "chapter_page": 35,
+      "start_page": 35,
+      "end_page": 42
+    }
+  ],
+  "groups": [
+    {
+      "id": "xiangjiang-anniversary",
+      "section_id": "album",
+      "title": "《图鉴湘江》湖南湘江新区成立十周年纪念画册",
+      "kind": "case",
+      "start_page": 3,
+      "end_page": 7,
+      "title_confidence": "high"
+    },
+    {
+      "id": "dongfanghong-anniversary",
+      "section_id": "album",
+      "title": "东方红建设集团60周年画册",
+      "kind": "case",
+      "start_page": 8,
+      "end_page": 11,
+      "title_confidence": "high"
+    },
+    {
+      "id": "lushan-holdings",
+      "section_id": "album",
+      "title": "麓山控股集团画册/折页",
+      "kind": "case",
+      "start_page": 12,
+      "end_page": 14,
+      "title_confidence": "high",
+      "note": "目录归属依原PDF画册章节，虽标题含折页，不将后两页移去折页章节。"
+    },
+    {
+      "id": "dongfanghong-fold",
+      "section_id": "brochure",
+      "title": "“匠心智造 笃行致远”湖南东方红建设集团折页",
+      "kind": "case",
+      "start_page": 16,
+      "end_page": 17,
+      "title_confidence": "high"
+    },
+    {
+      "id": "yuelu-science-fold",
+      "section_id": "brochure",
+      "title": "“城启新章”湘江科学城·岳麓山大学科技城折页",
+      "kind": "case",
+      "start_page": 18,
+      "end_page": 18,
+      "title_confidence": "high",
+      "source_title": "“城启新章”2025度湘江科学城 岳麓山大学科技城折页",
+      "note": "原页标题可读为2025度，展示标题省略不规范的年份写法，不补写年字。"
+    },
+    {
+      "id": "xiangjiang-investment-fold",
+      "section_id": "brochure",
+      "title": "湖南湘江新区（长沙高新区）环境投资推介",
+      "kind": "case",
+      "start_page": 19,
+      "end_page": 20,
+      "title_confidence": "high",
+      "note": "第20页无独立项目标题，连续蓝白推介折页视图保守归入第19页项目。"
+    },
+    {
+      "id": "presentation-collection",
+      "section_id": "ppt",
+      "title": "PPT设计合集",
+      "kind": "collection",
+      "start_page": 22,
+      "end_page": 25,
+      "title_confidence": "descriptive",
+      "note": "四页含多个可读主题，部分湘江推介内容重复；不强行认定四页为四个独立委托。"
+    },
+    {
+      "id": "dongfanghong-exhibition",
+      "section_id": "exhibition",
+      "title": "“东方红”展厅",
+      "kind": "case",
+      "start_page": 27,
+      "end_page": 28,
+      "title_confidence": "high"
+    },
+    {
+      "id": "xiangjiang-exhibition",
+      "section_id": "exhibition",
+      "title": "湖南湘江新区十周年展厅",
+      "kind": "case",
+      "start_page": 29,
+      "end_page": 31,
+      "title_confidence": "high"
+    },
+    {
+      "id": "jinbei-exhibition",
+      "section_id": "exhibition",
+      "title": "金杯电工展厅",
+      "kind": "case",
+      "start_page": 32,
+      "end_page": 34,
+      "title_confidence": "high",
+      "note": "第34页是金杯党群展板，保守归入同一企业展示组，不另造项目。"
+    },
+    {
+      "id": "city-outdoor-posters",
+      "section_id": "poster",
+      "title": "城市宣传户外海报",
+      "kind": "collection",
+      "start_page": 36,
+      "end_page": 37,
+      "title_confidence": "descriptive",
+      "note": "长沙/岳麓山宣传在户外大屏的应用；PDF无独立文字标题，使用中性视觉描述，不推断委托方。"
+    },
+    {
+      "id": "festival-commercial-posters",
+      "section_id": "poster",
+      "title": "节日与商业推广海报",
+      "kind": "collection",
+      "start_page": 38,
+      "end_page": 39,
+      "title_confidence": "descriptive",
+      "note": "包含中秋、国庆、教师节及商业推广；仅描述可见主题，不将一页多个海报算成多个独立项目。"
+    },
+    {
+      "id": "business-blogger-posters",
+      "section_id": "poster",
+      "title": "商业博主复刻计划活动海报",
+      "kind": "collection",
+      "start_page": 40,
+      "end_page": 40,
+      "title_confidence": "medium",
+      "note": "同一页含多张活动视觉，可读商业博主复刻计划；不扩展精确活动名和客户关系。"
+    },
+    {
+      "id": "entrepreneurship-posters",
+      "section_id": "poster",
+      "title": "2026创业趋势与破局之道活动海报",
+      "kind": "collection",
+      "start_page": 41,
+      "end_page": 42,
+      "title_confidence": "high",
+      "note": "海报中的GMV、报名人数、付款等属于原稿展示内容，不能提炼为Lee自己的业务业绩。"
+    }
+  ],
+  "pages": [
+    {
+      "page": 1,
+      "kind": "cover",
+      "title": "设计作品集封面",
+      "section_id": null,
+      "group_id": null
+    },
+    {
+      "page": 2,
+      "kind": "chapter",
+      "title": "画册设计章节页",
+      "section_id": "album",
+      "group_id": null
+    },
+    {
+      "page": 3,
+      "kind": "work",
+      "title": "《图鉴湘江》湖南湘江新区成立十周年纪念画册 · 展示1",
+      "section_id": "album",
+      "group_id": "xiangjiang-anniversary",
+      "within_group_page": 1
+    },
+    {
+      "page": 4,
+      "kind": "work",
+      "title": "《图鉴湘江》湖南湘江新区成立十周年纪念画册 · 展示2",
+      "section_id": "album",
+      "group_id": "xiangjiang-anniversary",
+      "within_group_page": 2
+    },
+    {
+      "page": 5,
+      "kind": "work",
+      "title": "《图鉴湘江》湖南湘江新区成立十周年纪念画册 · 展示3",
+      "section_id": "album",
+      "group_id": "xiangjiang-anniversary",
+      "within_group_page": 3
+    },
+    {
+      "page": 6,
+      "kind": "work",
+      "title": "《图鉴湘江》湖南湘江新区成立十周年纪念画册 · 展示4",
+      "section_id": "album",
+      "group_id": "xiangjiang-anniversary",
+      "within_group_page": 4
+    },
+    {
+      "page": 7,
+      "kind": "work",
+      "title": "《图鉴湘江》湖南湘江新区成立十周年纪念画册 · 展示5",
+      "section_id": "album",
+      "group_id": "xiangjiang-anniversary",
+      "within_group_page": 5
+    },
+    {
+      "page": 8,
+      "kind": "work",
+      "title": "东方红建设集团60周年画册 · 展示1",
+      "section_id": "album",
+      "group_id": "dongfanghong-anniversary",
+      "within_group_page": 1
+    },
+    {
+      "page": 9,
+      "kind": "work",
+      "title": "东方红建设集团60周年画册 · 展示2",
+      "section_id": "album",
+      "group_id": "dongfanghong-anniversary",
+      "within_group_page": 2
+    },
+    {
+      "page": 10,
+      "kind": "work",
+      "title": "东方红建设集团60周年画册 · 展示3",
+      "section_id": "album",
+      "group_id": "dongfanghong-anniversary",
+      "within_group_page": 3
+    },
+    {
+      "page": 11,
+      "kind": "work",
+      "title": "东方红建设集团60周年画册 · 展示4",
+      "section_id": "album",
+      "group_id": "dongfanghong-anniversary",
+      "within_group_page": 4
+    },
+    {
+      "page": 12,
+      "kind": "work",
+      "title": "麓山控股集团画册/折页 · 展示1",
+      "section_id": "album",
+      "group_id": "lushan-holdings",
+      "within_group_page": 1
+    },
+    {
+      "page": 13,
+      "kind": "work",
+      "title": "麓山控股集团画册/折页 · 展示2",
+      "section_id": "album",
+      "group_id": "lushan-holdings",
+      "within_group_page": 2
+    },
+    {
+      "page": 14,
+      "kind": "work",
+      "title": "麓山控股集团画册/折页 · 展示3",
+      "section_id": "album",
+      "group_id": "lushan-holdings",
+      "within_group_page": 3
+    },
+    {
+      "page": 15,
+      "kind": "chapter",
+      "title": "折页设计章节页",
+      "section_id": "brochure",
+      "group_id": null
+    },
+    {
+      "page": 16,
+      "kind": "work",
+      "title": "“匠心智造 笃行致远”湖南东方红建设集团折页 · 展示1",
+      "section_id": "brochure",
+      "group_id": "dongfanghong-fold",
+      "within_group_page": 1
+    },
+    {
+      "page": 17,
+      "kind": "work",
+      "title": "“匠心智造 笃行致远”湖南东方红建设集团折页 · 展示2",
+      "section_id": "brochure",
+      "group_id": "dongfanghong-fold",
+      "within_group_page": 2
+    },
+    {
+      "page": 18,
+      "kind": "work",
+      "title": "“城启新章”湘江科学城·岳麓山大学科技城折页 · 展示1",
+      "section_id": "brochure",
+      "group_id": "yuelu-science-fold",
+      "within_group_page": 1
+    },
+    {
+      "page": 19,
+      "kind": "work",
+      "title": "湖南湘江新区（长沙高新区）环境投资推介 · 展示1",
+      "section_id": "brochure",
+      "group_id": "xiangjiang-investment-fold",
+      "within_group_page": 1
+    },
+    {
+      "page": 20,
+      "kind": "work",
+      "title": "湖南湘江新区（长沙高新区）环境投资推介 · 展示2",
+      "section_id": "brochure",
+      "group_id": "xiangjiang-investment-fold",
+      "within_group_page": 2
+    },
+    {
+      "page": 21,
+      "kind": "chapter",
+      "title": "PPT设计章节页",
+      "section_id": "ppt",
+      "group_id": null
+    },
+    {
+      "page": 22,
+      "kind": "work",
+      "title": "“新潮湘江向未来”主题演示",
+      "section_id": "ppt",
+      "group_id": "presentation-collection",
+      "within_group_page": 1
+    },
+    {
+      "page": 23,
+      "kind": "work",
+      "title": "岳麓山品牌建设推进会推介词",
+      "section_id": "ppt",
+      "group_id": "presentation-collection",
+      "within_group_page": 2
+    },
+    {
+      "page": 24,
+      "kind": "work",
+      "title": "湘江新区推介演示设计合集",
+      "section_id": "ppt",
+      "group_id": "presentation-collection",
+      "within_group_page": 3
+    },
+    {
+      "page": 25,
+      "kind": "work",
+      "title": "湖南湘江新区生物医药及大健康产业、人工智能产业推介",
+      "section_id": "ppt",
+      "group_id": "presentation-collection",
+      "within_group_page": 4
+    },
+    {
+      "page": 26,
+      "kind": "chapter",
+      "title": "展陈设计章节页",
+      "section_id": "exhibition",
+      "group_id": null
+    },
+    {
+      "page": 27,
+      "kind": "work",
+      "title": "“东方红”展厅 · 展示1",
+      "section_id": "exhibition",
+      "group_id": "dongfanghong-exhibition",
+      "within_group_page": 1
+    },
+    {
+      "page": 28,
+      "kind": "work",
+      "title": "“东方红”展厅 · 展示2",
+      "section_id": "exhibition",
+      "group_id": "dongfanghong-exhibition",
+      "within_group_page": 2
+    },
+    {
+      "page": 29,
+      "kind": "work",
+      "title": "湖南湘江新区十周年展厅 · 展示1",
+      "section_id": "exhibition",
+      "group_id": "xiangjiang-exhibition",
+      "within_group_page": 1
+    },
+    {
+      "page": 30,
+      "kind": "work",
+      "title": "湖南湘江新区十周年展厅 · 展示2",
+      "section_id": "exhibition",
+      "group_id": "xiangjiang-exhibition",
+      "within_group_page": 2
+    },
+    {
+      "page": 31,
+      "kind": "work",
+      "title": "湖南湘江新区十周年展厅 · 展示3",
+      "section_id": "exhibition",
+      "group_id": "xiangjiang-exhibition",
+      "within_group_page": 3
+    },
+    {
+      "page": 32,
+      "kind": "work",
+      "title": "金杯电工展厅 · 展示1",
+      "section_id": "exhibition",
+      "group_id": "jinbei-exhibition",
+      "within_group_page": 1
+    },
+    {
+      "page": 33,
+      "kind": "work",
+      "title": "金杯电工展厅 · 展示2",
+      "section_id": "exhibition",
+      "group_id": "jinbei-exhibition",
+      "within_group_page": 2
+    },
+    {
+      "page": 34,
+      "kind": "work",
+      "title": "金杯电工展厅 · 展示3",
+      "section_id": "exhibition",
+      "group_id": "jinbei-exhibition",
+      "within_group_page": 3
+    },
+    {
+      "page": 35,
+      "kind": "chapter",
+      "title": "海报设计章节页",
+      "section_id": "poster",
+      "group_id": null
+    },
+    {
+      "page": 36,
+      "kind": "work",
+      "title": "城市宣传户外海报 · 展示1",
+      "section_id": "poster",
+      "group_id": "city-outdoor-posters",
+      "within_group_page": 1
+    },
+    {
+      "page": 37,
+      "kind": "work",
+      "title": "城市宣传户外海报 · 展示2",
+      "section_id": "poster",
+      "group_id": "city-outdoor-posters",
+      "within_group_page": 2
+    },
+    {
+      "page": 38,
+      "kind": "work",
+      "title": "中秋主题海报",
+      "section_id": "poster",
+      "group_id": "festival-commercial-posters",
+      "within_group_page": 1
+    },
+    {
+      "page": 39,
+      "kind": "work",
+      "title": "国庆、教师节及商业推广海报",
+      "section_id": "poster",
+      "group_id": "festival-commercial-posters",
+      "within_group_page": 2
+    },
+    {
+      "page": 40,
+      "kind": "work",
+      "title": "商业博主复刻计划活动海报 · 展示1",
+      "section_id": "poster",
+      "group_id": "business-blogger-posters",
+      "within_group_page": 1
+    },
+    {
+      "page": 41,
+      "kind": "work",
+      "title": "2026创业趋势与破局之道活动海报 · 展示1",
+      "section_id": "poster",
+      "group_id": "entrepreneurship-posters",
+      "within_group_page": 1
+    },
+    {
+      "page": 42,
+      "kind": "work",
+      "title": "2026创业趋势与破局之道活动海报 · 展示2",
+      "section_id": "poster",
+      "group_id": "entrepreneurship-posters",
+      "within_group_page": 2
+    }
+  ],
+  "ambiguities": [
+    "封面顶部导航顺序为画册、展陈、PPT、折页、其他；正文顺序为画册、折页、PPT、展陈、海报，默认正文页序保证不打乱原文件。",
+    "原稿海报章节字母为F，未出现E章节，按原稿保留，不补造一章。",
+    "PPT p22–25和海报p36–42包含主题合集，无完整独立项目清单，分组为保守视觉归属而非委托数量。",
+    "字体文字层乱码，关键标题由1400宽页面视觉核对；所有42页仍需以原稿整页图保留全部内容。"
+  ]
+}

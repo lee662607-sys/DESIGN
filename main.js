@@ -10,7 +10,8 @@
   const replay = document.getElementById('motion-replay');
   const indicators = [...document.querySelectorAll('.scene-indicator i')];
   const preference = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const assets = ['assets/cover-portrait.png', 'assets/map.png', 'assets/timeline.png'];
+  const assets = window.LEE_PORTFOLIO && window.LEE_PORTFOLIO.heroImages;
+  if (!Array.isArray(assets) || !assets.length) return;
   let reduced = preference.matches, paused = reduced, started = performance.now(), idleTime = 0;
   let last = performance.now(), lastDraw = -1, lastProgress = -1, dirty = true;
   let width = innerWidth, height = innerHeight, count = 0, cards = [];
