@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f6f3">
+  <meta name="description" content="Lee 的设计作品集：画册、展陈、PPT 与折页设计。">
+  <title>Lee — 设计作品集</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 80'%3E%3Crect width='80' height='80' fill='%23f5f6f3'/%3E%3Ctext x='12' y='61' font-family='Arial' font-weight='700' font-size='64'%3EL%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="gallery.css">
+  <script src="main.js" defer></script>
+  <script src="gallery.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#work">跳到作品</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Lee，返回首屏">Lee<span>.</span></a>
+    <nav aria-label="主导航"><a href="#work">作品</a><a href="#disciplines">设计方向</a></nav>
+    <div class="motion-actions">
+      <button id="motion-toggle" type="button" aria-pressed="false" aria-label="暂停漂浮动画" title="暂停漂浮动画"><svg class="pause-symbol" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 5v10M13 5v10"/></svg><svg class="play-symbol" viewBox="0 0 20 20" aria-hidden="true"><path d="m7 4 9 6-9 6Z"/></svg></button>
+      <button id="motion-replay" type="button" aria-label="重播首屏动画" title="重播首屏动画"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 8a6.5 6.5 0 1 1 .8 7M4 3v5h5"/></svg></button>
+    </div>
+  </header>
+  <main id="top">
+    <section class="hero-sequence" id="intro" aria-label="Lee 作品动画：向下滚动，卡片依次环绕、铺展">
+      <div class="hero-sticky">
+        <div class="hero-caption hero-caption-left"><span>设计，</span><span>在此呈现。</span></div>
+        <h1 class="hero-caption hero-caption-right"><span>Lee</span><span>作品集。</span></h1>
+        <div class="plane-caption"><span>让作品</span><span>说话。</span></div>
+        <div class="perspective-stage" aria-hidden="true"><div class="card-world" id="card-world"></div></div>
+        <div class="hero-bottom"><p class="hero-note">画册、展陈与视觉设计。<br>从一页纸，到完整的表达。</p><a class="scroll-cue" href="#work"><span>向下，走进作品</span><svg viewBox="0 0 16 24" aria-hidden="true"><path d="M8 1v19m-6-6 6 6 6-6"/></svg></a><span class="scene-indicator" aria-hidden="true"><i></i><i></i><i></i></span></div>
+      </div>
+    </section>
+    <section id="work" class="work" aria-labelledby="work-title">
+      <header class="work-heading"><div><p class="work-kicker">精选作品</p><h2 id="work-title">图鉴湘江</h2><p class="work-subtitle">湖南湘江新区成立十周年纪念画册</p></div><span class="work-category">画册设计</span></header>
+      <div class="masonry" id="masonry"></div>
+    </section>
+    <section id="disciplines" class="disciplines" aria-labelledby="disciplines-title"><div class="discipline-intro"><h2 id="disciplines-title">设计方向</h2><p>从内容出发，让形式恰如其分。</p></div><ul><li><span>画册设计</span><span>Editorial</span></li><li><span>展陈设计</span><span>Exhibition</span></li><li><span>PPT 设计</span><span>Presentation</span></li><li><span>折页设计</span><span>Print</span></li><li><span>其他设计</span><span>Other explorations</span></li></ul></section>
+  </main>
+  <footer class="site-footer"><a class="wordmark" href="#top" aria-label="回到首屏">Lee.</a><span>设计作品集</span><a href="#top">回到顶部 ↑</a></footer>
+  <dialog id="project-dialog" class="project-dialog" aria-label="图鉴湘江作品放大查看"></dialog>
+  <noscript><p class="noscript-note">请启用 JavaScript 查看作品动画与图库。</p></noscript>
+</body>
+</html>
