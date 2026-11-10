@@ -71,5 +71,7 @@
     "其他设计"
   ],
   "navigationActiveTabVisibleOnMobile": true,
-  "verifiedAtUtc": "2026-11-10T02:28:34.941993+00:00"
+  "verifiedAtUtc": "2026-11-10T02:28:34.941993+00:00",
+  "dialogRepeatedCloseOpenImagesVisible": true,
+  "lastPageScreenshotVisuallyChecked": true
 }

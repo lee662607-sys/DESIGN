@@ -267,8 +267,11 @@
     if (dialog.open) dialog.close();
   }
 
-  fullImage.addEventListener('load', function () { error.hidden = true; });
-  fullImage.addEventListener('error', function () { error.hidden = false; fullImage.hidden = true; });
+  fullImage.addEventListener('load', function () { error.hidden = true; fullImage.hidden = false; });
+  fullImage.addEventListener('error', function () {
+    if (!fullImage.getAttribute('src') || !fullImage.complete || fullImage.naturalWidth > 0) return;
+    error.hidden = false; fullImage.hidden = true;
+  });
   closeButton.addEventListener('click', closeView);
   previous.addEventListener('click', function () { updateView(currentIndex - 1); });
   next.addEventListener('click', function () { updateView(currentIndex + 1); });
@@ -290,6 +293,8 @@
     if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) closeView();
   });
   dialog.addEventListener('close', function () {
+    // Native close events may arrive after the next page is already reopened.
+    if (dialog.open) return;
     document.documentElement.classList.remove('gallery-dialog-open');
     setZoom(false);
     fullImage.removeAttribute('src');
